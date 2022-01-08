@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+}
+
+hr {
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+.section {
+    color: white;
+    background-color: transparent;
+    padding: 1vw;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#planets-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+.planet-card{
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 5px;
+}
