@@ -138,6 +138,34 @@ nav {
     background-repeat: no-repeat;
 }
 
+#planet-text{
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-right: 10%;
+}
+
+.planet-card{
+    height: fit-content;
+    width: 10%;
+    min-width: 60px;
+    background-color: black;
+    margin-top: 2vh;
+    padding: 5px;
+    border: 2px solid white;
+    transition: .6s;
+    font-family: helvetica;
+}
+
+.planet-card:hover{
+    background-color: white;
+    color: black;
+}
+
+#planet-text h2{
+    font-family: helvetica;
+    font-size: 4vw;
+}
+
 /* Orbits section */
 
 /* Missions section */
@@ -147,4 +175,39 @@ nav {
     background-image: url(/assets/backgrounds/habitat.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+@media (max-width:1629px){
+    #section-box-missions-picture{
+        background-size:100% 95%;
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width:1382px){
+    #section-box-missions-picture{
+        background-size:100% 80%;
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width:1061px){
+    #section-box-missions-picture{
+        background-size:100% 75%;
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width:778px){
+    #section-box-missions-picture{
+        background-size:100% 68%;
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width:591px){
+    #section-box-missions-picture{
+        background-size:100% 50%;
+        background-position-y: bottom;
+    }
 }
