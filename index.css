@@ -43,6 +43,7 @@ nav {
 .nav-link-internal {
     color: black;
     text-decoration:none;
+    font-family: helvetica;
 }
 
 .section{
@@ -77,4 +78,20 @@ nav {
     width: 100%;
     height: 100%;
     padding: 10px;
+}
+
+#welcome-text {
+    left: 10%;
+    top: 10%;
+}
+
+#welcome-text h1 {
+    font-size: 4vw;
+    font-family: helvetica;
+}
+
+#welcome p{
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: helvetica;
 }
