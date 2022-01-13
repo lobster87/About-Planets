@@ -92,7 +92,7 @@ nav {
 /* Welcome section */
 #section-box-welcome-picture {
     background-image: url("/assets/backgrounds/Earthrising.png");
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
 }
@@ -123,6 +123,12 @@ nav {
         font-family: helvetica;
     }
 
+    #section-box-welcome-picture{
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
     #welcome-text p {
         font-size: 5vw;
     }
@@ -147,6 +153,7 @@ nav {
 .planet-card{
     height: fit-content;
     width: 10%;
+    min-width: fit-content;
     min-width: 60px;
     background-color: black;
     margin-top: 2vh;
@@ -166,6 +173,24 @@ nav {
     font-size: 4vw;
 }
 
+@media only screen and (max-width: 425px) {
+
+    #planet-text h2 {
+        font-size: 10vw;
+    }
+
+    #section-box-planet-picture{
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    #planet-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
 /* Orbits section */
 
 /* Missions section */
@@ -175,39 +200,57 @@ nav {
     background-image: url(/assets/backgrounds/habitat.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-@media (max-width:1629px){
-    #section-box-missions-picture{
-        background-size:100% 95%;
-        background-position-y: bottom;
-    }
+#missions-text h2{
+    font-size: 4vw;
+    margin-bottom: 1vh;
 }
 
-@media (max-width:1382px){
-    #section-box-missions-picture{
-        background-size:100% 80%;
-        background-position-y: bottom;
-    }
+#missions-text{
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-right: 10%;
+    font-family: helvetica;
 }
 
-@media (max-width:1061px){
-    #section-box-missions-picture{
-        background-size:100% 75%;
-        background-position-y: bottom;
-    }
+.mission-card{
+    height: fit-content;
+    width: 15%;
+    border: 2px solid white;
+    background-color: black;
+    min-width: fit-content;
+    margin-top: 2vh;
+    padding: 5px;
+    transition: .6s;
+    font-family: helvetica;
 }
 
-@media (max-width:778px){
-    #section-box-missions-picture{
-        background-size:100% 68%;
-        background-position-y: bottom;
-    }
+.mission-card:hover{
+    background-color: white;
+    color: black;
 }
 
-@media (max-width:591px){
-    #section-box-missions-picture{
-        background-size:100% 50%;
-        background-position-y: bottom;
+@media only screen and (max-width: 425px) {
+
+    #missions-text h2 {
+        font-size: 10vw;
     }
-}
+
+    #section-box-missions-picture{
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    #missions-text p {
+        font-size: 5vw;
+    }
+
+    #mission-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 3px;
+    }
+  }
